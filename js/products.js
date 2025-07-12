@@ -1,29 +1,29 @@
 // Enhanced products data with more details
 const products = [
-    { id: 1, name: "Premium Wireless Headphones", category: "electronics", price: 299.99, originalPrice: 399.99, rating: 4.8, reviews: 256, image: "🎧", sale: true },
-    { id: 2, name: "Designer Cotton T-Shirt", category: "fashion", price: 49.99, rating: 4.5, reviews: 128, image: "👕" },
-    { id: 3, name: "Luxury Watch Collection", category: "accessories", price: 899.99, rating: 4.9, reviews: 89, image: "⌚" },
-    { id: 4, name: "Smart Fitness Tracker", category: "electronics", price: 199.99, originalPrice: 249.99, rating: 4.6, reviews: 342, image: "📱", sale: true },
-    { id: 5, name: "Casual Denim Jacket", category: "fashion", price: 79.99, rating: 4.4, reviews: 156, image: "🧥" },
-    { id: 6, name: "Bluetooth Speaker Pro", category: "electronics", price: 149.99, rating: 4.7, reviews: 223, image: "🔊" },
-    { id: 7, name: "Summer Dress Collection", category: "fashion", price: 89.99, originalPrice: 119.99, rating: 4.3, reviews: 94, image: "👗", sale: true },
-    { id: 8, name: "Leather Handbag", category: "accessories", price: 199.99, rating: 4.6, reviews: 167, image: "👜" },
-    { id: 9, name: "Gaming Laptop Ultra", category: "electronics", price: 1299.99, rating: 4.8, reviews: 78, image: "💻" },
-    { id: 10, name: "Sneakers Sport Edition", category: "fashion", price: 129.99, rating: 4.5, reviews: 312, image: "👟" },
-    { id: 11, name: "Wireless Earbuds Pro", category: "electronics", price: 179.99, originalPrice: 199.99, rating: 4.7, reviews: 445, image: "🎵", sale: true },
-    { id: 12, name: "Silk Scarf Luxury", category: "accessories", price: 59.99, rating: 4.4, reviews: 67, image: "🧣" },
-    { id: 13, name: "Smart Home Camera", category: "electronics", price: 249.99, rating: 4.6, reviews: 189, image: "📷" },
-    { id: 14, name: "Winter Coat Premium", category: "fashion", price: 199.99, originalPrice: 279.99, rating: 4.8, reviews: 123, image: "🧥", sale: true },
-    { id: 15, name: "Tablet Pro 12-inch", category: "electronics", price: 799.99, rating: 4.7, reviews: 201, image: "📱" },
-    { id: 16, name: "Designer Sunglasses", category: "accessories", price: 149.99, rating: 4.5, reviews: 145, image: "🕶️" },
-    { id: 17, name: "Formal Shirt Collection", category: "fashion", price: 69.99, rating: 4.3, reviews: 178, image: "👔" },
-    { id: 18, name: "Portable Power Bank", category: "electronics", price: 39.99, originalPrice: 59.99, rating: 4.4, reviews: 567, image: "🔋", sale: true },
-    { id: 19, name: "Evening Gown Elegant", category: "fashion", price: 299.99, rating: 4.9, reviews: 43, image: "👗" },
-    { id: 20, name: "Smart Doorbell HD", category: "electronics", price: 199.99, rating: 4.6, reviews: 234, image: "🔔" },
-    { id: 21, name: "Running Shoes Pro", category: "fashion", price: 159.99, rating: 4.7, reviews: 298, image: "👟" },
-    { id: 22, name: "Wireless Mouse Gaming", category: "electronics", price: 89.99, originalPrice: 109.99, rating: 4.5, reviews: 356, image: "🖱️", sale: true },
-    { id: 23, name: "Pearl Necklace Set", category: "accessories", price: 349.99, rating: 4.8, reviews: 72, image: "📿" },
-    { id: 24, name: "Leather Wallet Premium", category: "accessories", price: 79.99, rating: 4.6, reviews: 189, image: "👛" }
+    { id: 1, name: "Premium Wireless Headphones", category: "electronics", price: 299.99, originalPrice: 399.99, rating: 4.8, reviews: 256, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 2, name: "Designer Cotton T-Shirt", category: "fashion", price: 49.99, rating: 4.5, reviews: 128, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&crop=center" },
+    { id: 3, name: "Luxury Watch Collection", category: "accessories", price: 899.99, rating: 4.9, reviews: 89, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&crop=center" },
+    { id: 4, name: "Smart Fitness Tracker", category: "electronics", price: 199.99, originalPrice: 249.99, rating: 4.6, reviews: 342, image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 5, name: "Casual Denim Jacket", category: "fashion", price: 79.99, rating: 4.4, reviews: 156, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop&crop=center" },
+    { id: 6, name: "Bluetooth Speaker Pro", category: "electronics", price: 149.99, rating: 4.7, reviews: 223, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop&crop=center" },
+    { id: 7, name: "Summer Dress Collection", category: "fashion", price: 89.99, originalPrice: 119.99, rating: 4.3, reviews: 94, image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 8, name: "Leather Handbag", category: "accessories", price: 199.99, rating: 4.6, reviews: 167, image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&fit=crop&crop=center" },
+    { id: 9, name: "Gaming Laptop Ultra", category: "electronics", price: 1299.99, rating: 4.8, reviews: 78, image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop&crop=center" },
+    { id: 10, name: "Sneakers Sport Edition", category: "fashion", price: 129.99, rating: 4.5, reviews: 312, image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&crop=center" },
+    { id: 11, name: "Wireless Earbuds Pro", category: "electronics", price: 179.99, originalPrice: 199.99, rating: 4.7, reviews: 445, image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 12, name: "Silk Scarf Luxury", category: "accessories", price: 59.99, rating: 4.4, reviews: 67, image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400&h=400&fit=crop&crop=center" },
+    { id: 13, name: "Smart Home Camera", category: "electronics", price: 249.99, rating: 4.6, reviews: 189, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center" },
+    { id: 14, name: "Winter Coat Premium", category: "fashion", price: 199.99, originalPrice: 279.99, rating: 4.8, reviews: 123, image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 15, name: "Tablet Pro 12-inch", category: "electronics", price: 799.99, rating: 4.7, reviews: 201, image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&h=400&fit=crop&crop=center" },
+    { id: 16, name: "Designer Sunglasses", category: "accessories", price: 149.99, rating: 4.5, reviews: 145, image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop&crop=center" },
+    { id: 17, name: "Formal Shirt Collection", category: "fashion", price: 69.99, rating: 4.3, reviews: 178, image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=400&fit=crop&crop=center" },
+    { id: 18, name: "Portable Power Bank", category: "electronics", price: 39.99, originalPrice: 59.99, rating: 4.4, reviews: 567, image: "https://images.unsplash.com/photo-1609592424686-192ffa1d6ee2?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 19, name: "Evening Gown Elegant", category: "fashion", price: 299.99, rating: 4.9, reviews: 43, image: "https://images.unsplash.com/photo-1566479179817-0b4d4ee97b1d?w=400&h=400&fit=crop&crop=center" },
+    { id: 20, name: "Smart Doorbell HD", category: "electronics", price: 199.99, rating: 4.6, reviews: 234, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center" },
+    { id: 21, name: "Running Shoes Pro", category: "fashion", price: 159.99, rating: 4.7, reviews: 298, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&crop=center" },
+    { id: 22, name: "Wireless Mouse Gaming", category: "electronics", price: 89.99, originalPrice: 109.99, rating: 4.5, reviews: 356, image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop&crop=center", sale: true },
+    { id: 23, name: "Pearl Necklace Set", category: "accessories", price: 349.99, rating: 4.8, reviews: 72, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop&crop=center" },
+    { id: 24, name: "Leather Wallet Premium", category: "accessories", price: 79.99, rating: 4.6, reviews: 189, image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&crop=center" }
 ];
 
 // Pagination and filtering variables
@@ -89,8 +89,8 @@ function createProductCard(product) {
     card.innerHTML = `
         <div class="relative">
             ${saleTag}
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-4xl relative overflow-hidden group">
-                <span class="transition-transform group-hover:scale-110 duration-300">${product.image}</span>
+            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden group">
+                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-300" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/e2e8f0/64748b?text=Image+Not+Found'">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
             </div>
             <button class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100" onclick="toggleWishlist(${product.id}, event)">

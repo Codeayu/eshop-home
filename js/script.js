@@ -1,25 +1,25 @@
 // Sample product data
 const products = [
-    { id: 1, name: "Premium Wireless Headphones", category: "electronics", price: 299.99, rating: 4.8, image: "🎧" },
-    { id: 2, name: "Designer Cotton T-Shirt", category: "fashion", price: 49.99, rating: 4.5, image: "👕" },
-    { id: 3, name: "Luxury Watch Collection", category: "accessories", price: 899.99, rating: 4.9, image: "⌚" },
-    { id: 4, name: "Smart Fitness Tracker", category: "electronics", price: 199.99, rating: 4.6, image: "📱" },
-    { id: 5, name: "Casual Denim Jacket", category: "fashion", price: 79.99, rating: 4.4, image: "🧥" },
-    { id: 6, name: "Bluetooth Speaker Pro", category: "electronics", price: 149.99, rating: 4.7, image: "🔊" },
-    { id: 7, name: "Summer Dress Collection", category: "fashion", price: 89.99, rating: 4.3, image: "👗" },
-    { id: 8, name: "Leather Handbag", category: "accessories", price: 199.99, rating: 4.6, image: "👜" },
-    { id: 9, name: "Gaming Laptop Ultra", category: "electronics", price: 1299.99, rating: 4.8, image: "💻" },
-    { id: 10, name: "Sneakers Sport Edition", category: "fashion", price: 129.99, rating: 4.5, image: "👟" },
-    { id: 11, name: "Wireless Earbuds Pro", category: "electronics", price: 179.99, rating: 4.7, image: "🎵" },
-    { id: 12, name: "Silk Scarf Luxury", category: "accessories", price: 59.99, rating: 4.4, image: "🧣" },
-    { id: 13, name: "Smart Home Camera", category: "electronics", price: 249.99, rating: 4.6, image: "📷" },
-    { id: 14, name: "Winter Coat Premium", category: "fashion", price: 199.99, rating: 4.8, image: "🧥" },
-    { id: 15, name: "Tablet Pro 12-inch", category: "electronics", price: 799.99, rating: 4.7, image: "📱" },
-    { id: 16, name: "Designer Sunglasses", category: "accessories", price: 149.99, rating: 4.5, image: "🕶️" },
-    { id: 17, name: "Formal Shirt Collection", category: "fashion", price: 69.99, rating: 4.3, image: "👔" },
-    { id: 18, name: "Portable Power Bank", category: "electronics", price: 39.99, rating: 4.4, image: "🔋" },
-    { id: 19, name: "Evening Gown Elegant", category: "fashion", price: 299.99, rating: 4.9, image: "👗" },
-    { id: 20, name: "Smart Doorbell HD", category: "electronics", price: 199.99, rating: 4.6, image: "🔔" }
+    { id: 1, name: "Premium Wireless Headphones", category: "electronics", price: 299.99, rating: 4.8, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&crop=center" },
+    { id: 2, name: "Designer Cotton T-Shirt", category: "fashion", price: 49.99, rating: 4.5, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&crop=center" },
+    { id: 3, name: "Luxury Watch Collection", category: "accessories", price: 899.99, rating: 4.9, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&crop=center" },
+    { id: 4, name: "Smart Fitness Tracker", category: "electronics", price: 199.99, rating: 4.6, image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop&crop=center" },
+    { id: 5, name: "Casual Denim Jacket", category: "fashion", price: 79.99, rating: 4.4, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop&crop=center" },
+    { id: 6, name: "Bluetooth Speaker Pro", category: "electronics", price: 149.99, rating: 4.7, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop&crop=center" },
+    { id: 7, name: "Summer Dress Collection", category: "fashion", price: 89.99, rating: 4.3, image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop&crop=center" },
+    { id: 8, name: "Leather Handbag", category: "accessories", price: 199.99, rating: 4.6, image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&fit=crop&crop=center" },
+    { id: 9, name: "Gaming Laptop Ultra", category: "electronics", price: 1299.99, rating: 4.8, image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop&crop=center" },
+    { id: 10, name: "Sneakers Sport Edition", category: "fashion", price: 129.99, rating: 4.5, image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&crop=center" },
+    { id: 11, name: "Wireless Earbuds Pro", category: "electronics", price: 179.99, rating: 4.7, image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=400&fit=crop&crop=center" },
+    { id: 12, name: "Silk Scarf Luxury", category: "accessories", price: 59.99, rating: 4.4, image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400&h=400&fit=crop&crop=center" },
+    { id: 13, name: "Smart Home Camera", category: "electronics", price: 249.99, rating: 4.6, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center" },
+    { id: 14, name: "Winter Coat Premium", category: "fashion", price: 199.99, rating: 4.8, image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop&crop=center" },
+    { id: 15, name: "Tablet Pro 12-inch", category: "electronics", price: 799.99, rating: 4.7, image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&h=400&fit=crop&crop=center" },
+    { id: 16, name: "Designer Sunglasses", category: "accessories", price: 149.99, rating: 4.5, image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop&crop=center" },
+    { id: 17, name: "Formal Shirt Collection", category: "fashion", price: 69.99, rating: 4.3, image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=400&fit=crop&crop=center" },
+    { id: 18, name: "Portable Power Bank", category: "electronics", price: 39.99, rating: 4.4, image: "https://images.unsplash.com/photo-1609592424686-192ffa1d6ee2?w=400&h=400&fit=crop&crop=center" },
+    { id: 19, name: "Evening Gown Elegant", category: "fashion", price: 299.99, rating: 4.9, image: "https://images.unsplash.com/photo-1566479179817-0b4d4ee97b1d?w=400&h=400&fit=crop&crop=center" },
+    { id: 20, name: "Smart Doorbell HD", category: "electronics", price: 199.99, rating: 4.6, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center" }
 ];
 
 // Pagination and filtering variables
@@ -71,7 +71,7 @@ function createProductCard(product) {
     card.className = 'product-card';
     card.innerHTML = `
         <div class="product-image">
-            <span style="font-size: 4rem;">${product.image}</span>
+            <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" loading="lazy" onerror="this.src='https://via.placeholder.com/400x200/e2e8f0/64748b?text=Image+Not+Found'">
         </div>
         <div class="product-info">
             <div class="product-category">${product.category}</div>
