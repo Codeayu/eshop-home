@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - EliteShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#f59e0b',
+                        accent: '#ec4899'
+                    },
+                    fontFamily: {
+                        'primary': ['Poppins', 'sans-serif'],
+                        'heading': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-heading font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                        EliteShop
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary transition-colors">Products</a>
+                    <a href="cart.html" class="text-gray-700 hover:text-primary transition-colors">Cart</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-primary transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="text-gray-700 hover:text-primary transition-colors">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <a href="cart.html" class="relative text-gray-700 hover:text-primary transition-colors">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-2 -right-2 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="pt-20 pb-4 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="index.html" class="text-gray-400 hover:text-gray-500">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+                    </li>
+                    <li>
+                        <a href="products.html" class="text-gray-400 hover:text-gray-500">Products</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+                    </li>
+                    <li>
+                        <span class="text-gray-500">Premium Wireless Headphones</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Product Images -->
+            <div class="space-y-4">
+                <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden">
+                    <div class="w-full h-full flex items-center justify-center text-8xl">🎧</div>
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden cursor-pointer border-2 border-primary">
+                        <div class="w-full h-full flex items-center justify-center text-2xl">🎧</div>
+                    </div>
+                    <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary">
+                        <div class="w-full h-full flex items-center justify-center text-2xl">🎵</div>
+                    </div>
+                    <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary">
+                        <div class="w-full h-full flex items-center justify-center text-2xl">🔊</div>
+                    </div>
+                    <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary">
+                        <div class="w-full h-full flex items-center justify-center text-2xl">📱</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-6">
+                <div>
+                    <h1 class="text-3xl font-heading font-bold text-gray-900 mb-2">Premium Wireless Headphones</h1>
+                    <p class="text-primary font-semibold uppercase tracking-wide text-sm">Electronics</p>
+                </div>
+
+                <!-- Rating -->
+                <div class="flex items-center space-x-2">
+                    <div class="flex text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-600">(4.8)</span>
+                    <span class="text-gray-400">•</span>
+                    <span class="text-gray-600">256 reviews</span>
+                </div>
+
+                <!-- Price -->
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl font-bold text-secondary">$299.99</span>
+                        <span class="text-xl text-gray-400 line-through">$399.99</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-sm font-semibold">25% OFF</span>
+                    </div>
+                    <p class="text-green-600 font-semibold">Free shipping on orders over $50</p>
+                </div>
+
+                <!-- Description -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Description</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience premium sound quality with our latest wireless headphones. Featuring advanced noise cancellation, 
+                        40-hour battery life, and crystal-clear audio reproduction. Perfect for music lovers, professionals, and 
+                        everyday use.
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Key Features</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-gray-600">Active Noise Cancellation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-gray-600">40-hour Battery Life</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-gray-600">Bluetooth 5.0 Connectivity</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-gray-600">Premium Leather Cushions</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Color Options -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Color</h3>
+                    <div class="flex space-x-3">
+                        <button class="w-8 h-8 bg-black rounded-full border-2 border-primary"></button>
+                        <button class="w-8 h-8 bg-white rounded-full border-2 border-gray-300 hover:border-primary"></button>
+                        <button class="w-8 h-8 bg-blue-500 rounded-full border-2 border-gray-300 hover:border-primary"></button>
+                        <button class="w-8 h-8 bg-red-500 rounded-full border-2 border-gray-300 hover:border-primary"></button>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Quantity</h3>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex border border-gray-300 rounded-lg">
+                            <button class="px-3 py-2 hover:bg-gray-100 transition-colors" onclick="decreaseQuantity()">-</button>
+                            <span id="quantity" class="px-4 py-2 border-x border-gray-300">1</span>
+                            <button class="px-3 py-2 hover:bg-gray-100 transition-colors" onclick="increaseQuantity()">+</button>
+                        </div>
+                        <span class="text-green-600 font-semibold">In Stock</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-4">
+                    <button class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                        Add to Cart
+                    </button>
+                    <button class="w-full border border-primary text-primary py-3 px-6 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        <i class="fas fa-heart mr-2"></i>
+                        Add to Wishlist
+                    </button>
+                </div>
+
+                <!-- Shipping & Returns -->
+                <div class="border-t pt-6 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-truck text-primary"></i>
+                        <div>
+                            <p class="font-semibold text-gray-900">Free Shipping</p>
+                            <p class="text-sm text-gray-600">On orders over $50</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-undo text-primary"></i>
+                        <div>
+                            <p class="font-semibold text-gray-900">Free Returns</p>
+                            <p class="text-sm text-gray-600">30-day return policy</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-shield-alt text-primary"></i>
+                        <div>
+                            <p class="font-semibold text-gray-900">Warranty</p>
+                            <p class="text-sm text-gray-600">2-year manufacturer warranty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-heading font-bold text-gray-900 mb-8">Related Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Related Product 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-4xl">🔊</div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-2">Bluetooth Speaker Pro</h3>
+                        <p class="text-secondary font-bold">$149.99</p>
+                    </div>
+                </div>
+                <!-- Related Product 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-4xl">🎵</div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-2">Wireless Earbuds Pro</h3>
+                        <p class="text-secondary font-bold">$179.99</p>
+                    </div>
+                </div>
+                <!-- Related Product 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-4xl">📱</div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-2">Smart Fitness Tracker</h3>
+                        <p class="text-secondary font-bold">$199.99</p>
+                    </div>
+                </div>
+                <!-- Related Product 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-4xl">💻</div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-2">Gaming Laptop Ultra</h3>
+                        <p class="text-secondary font-bold">$1299.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading font-bold mb-4">EliteShop</h3>
+                    <p class="text-gray-300 mb-4">Your premium destination for fashion and electronics.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@eliteshop.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Fashion St, NYC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 EliteShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function increaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            quantityElement.textContent = quantity + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity > 1) {
+                quantityElement.textContent = quantity - 1;
+            }
+        }
+    </script>
+</body>
+</html>
